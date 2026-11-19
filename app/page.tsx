@@ -228,7 +228,7 @@ export default function BotShieldPage() {
             <span>© 2026 BotShield</span>
             <span>•</span>
             <a
-              href="https://github.com"
+              href="https://github.com/ruben-dev-vibe/botshield-gen/blob/main/LICENSE"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-slate-200 underline underline-offset-2"
