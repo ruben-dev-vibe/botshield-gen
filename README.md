@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛡️ BotShield — Free AI & Meta Scraper Blocker
 
-## Getting Started
+**BotShield** is a fast, zero-signup, client-side web tool that helps website owners block aggressive AI training bots and social scrapers (`meta-externalagent`, `GPTBot`, `ClaudeBot`, `CCBot`, `Bytespider`) **without hurting Google or Bing Search rankings**.
 
-First, run the development server:
+🌐 **Live Tool:** [https://botshield-generator.vercel.app/](https://botshield-generator.vercel.app/)
+
+---
+
+## ✨ Features
+
+- **100% Client-Side & Privacy-First:** Runs completely in your browser. Your domain name is never saved, logged, or sent to any server.
+- **Custom `robots.txt` Generator:** Select the crawlers you want to block while keeping `Googlebot` and `Bingbot` allowed, with automatic `Sitemap` formatting.
+- **Cloudflare WAF Expression Generator:** Creates ready-to-paste firewall expressions (`http.user_agent contains ...`) for hard server-level blocking when crawlers ignore `robots.txt`.
+- **One-Click Copy & Download:** Export your rules directly as a `.txt` file or copy to clipboard in one click.
+
+---
+
+## 🤖 Supported Crawlers
+
+- **Meta (`meta-externalagent`)** — Meta AI training & crawler
+- **OpenAI (`GPTBot`)** — ChatGPT / OpenAI training crawler
+- **Anthropic (`ClaudeBot`)** — Claude AI data collection
+- **Google (`Google-Extended`)** — Blocks Gemini AI training without affecting Google Search
+- **Common Crawl (`CCBot`)** — Open web scraping dataset
+- **ByteDance (`Bytespider`)** — LLM training scraper
+- **Perplexity (`PerplexityBot`)** — AI search summary crawler
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Hosting:** Vercel
+
+---
+
+## 🚀 Run Locally
 
 ```bash
+git clone https://github.com/ruben-dev-vibe/botshield-gen
+cd botshield-gen
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Need Help Setting It Up?
 
-## Learn More
+Don't want to risk breaking your SEO or Cloudflare DNS/WAF settings? Book a **Done-For-You Setup ($9)** or support the project via Ko-fi:
 
-To learn more about Next.js, take a look at the following resources:
+👉 **[Support or Book Setup on Ko-fi](https://ko-fi.com/botshield)**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📄 License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is open-source under the [MIT License](LICENSE).
