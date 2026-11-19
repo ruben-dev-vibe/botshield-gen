@@ -16,8 +16,10 @@ export const metadata: Metadata = {
   title: "BotShield | Free AI & Meta Scraper Blocker (robots.txt & Cloudflare)",
   description:
     "Generate custom robots.txt and Cloudflare WAF rules in seconds to block meta-externalagent, GPTBot, and ClaudeBot without hurting Google Search.",
+  verification: {
+    google: "25adP2Sp1AJESEKmqokQTwaTONL3_5Dl5y65bjhI8eM",
+  },
 };
-
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
