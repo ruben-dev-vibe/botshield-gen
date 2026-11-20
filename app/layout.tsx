@@ -24,13 +24,31 @@ export const metadata: Metadata = {
     canonical: "/",
   },
 };
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+    }: Readonly<{
+      children: React.ReactNode;
+  }>) 
+{
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: "BotShield",
+      alternateName: "BotShield AI Scraper Blocker",
+      url: "https://botshield-generator.vercel.app",
+    };
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}<Analytics /></body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        {children}<Analytics />
+      </body>
     </html>
   );
 }
